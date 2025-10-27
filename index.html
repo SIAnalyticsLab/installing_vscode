@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installing and Using Visual Studio Code</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fafb;
+      color: #1f2937;
+    }
+    header {
+      background-color: #0f766e;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #0f766e;
+      margin-top: 2rem;
+    }
+    ol, ul {
+      margin-left: 1.5rem;
+    }
+    code {
+      background: #f1f5f9;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    pre {
+      background: #0f172a;
+      color: #e5e7eb;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    a {
+      color: #0a66c2;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .highlight {
+      background: #ecfdf5;
+      padding: 1rem;
+      border-left: 5px solid #0f766e;
+      border-radius: 6px;
+      margin: 1rem 0;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🧭 Installing and Using Visual Studio Code</h1>
+    <p>A step-by-step beginner’s guide for Quarto, R, and Python users</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Step 1: Download Visual Studio Code</h2>
+      <ol>
+        <li>Visit the official website: <a href="https://code.visualstudio.com" target="_blank">https://code.visualstudio.com</a></li>
+        <li>Click <strong>Download</strong> for your operating system:
+          <ul>
+            <li>Windows</li>
+            <li>macOS</li>
+            <li>Linux</li>
+          </ul>
+        </li>
+        <li>Open the installer and follow the setup wizard.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Step 2: Launch VS Code</h2>
+      <p>Open Visual Studio Code from your desktop or Start menu. You’ll see a welcome screen — you can close it or explore the “Get Started” walkthrough.</p>
+    </section>
+
+    <section>
+      <h2>Step 3: Install Key Extensions</h2>
+      <p>Click the <strong>Extensions</strong> icon (on the left sidebar) or press <code>Ctrl+Shift+X</code>.  
+      Search for and install these recommended extensions:</p>
+      <ul>
+        <li><strong>Quarto</strong> — for creating and rendering <code>.qmd</code> files</li>
+        <li><strong>R Language (Yuki Ueda)</strong> — adds syntax highlighting and support for R</li>
+        <li><strong>Python (Microsoft)</strong> — enables Python execution</li>
+        <li><strong>Markdown All in One</strong> — enhances formatting and previews</li>
+        <li><strong>GitHub Pull Requests and Issues</strong> — integrates GitHub workflows</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Step 4: Connect VS Code with R or Python</h2>
+      <ol>
+        <li>Ensure you have R or Python installed:
+          <ul>
+            <li><a href="https://cran.r-project.org/" target="_blank">Download R</a></li>
+            <li><a href="https://www.python.org/downloads/" target="_blank">Download Python</a></li>
+          </ul>
+        </li>
+        <li>In VS Code, open <strong>Command Palette</strong> (<code>Ctrl+Shift+P</code>).</li>
+        <li>Type <code>Select Interpreter</code> and choose your Python installation.</li>
+        <li>For R users, ensure VS Code detects R automatically via the R extension.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Step 5: Create and Run Your First File</h2>
+      <ol>
+        <li>Click <strong>File → New File</strong>.</li>
+        <li>Save it as <code>test.qmd</code>, <code>script.R</code>, or <code>script.py</code>.</li>
+        <li>Write a simple test code:</li>
+      </ol>
+      <pre><code class="language-python">print("Hello, Quarto!")</code></pre>
+      <p>or</p>
+      <pre><code class="language-r">print("Hello, Quarto!")</code></pre>
+      <p>Run your code using <code>Ctrl+Enter</code> (Windows) or <code>Cmd+Enter</code> (Mac).</p>
+    </section>
+
+    <section>
+      <h2>Step 6: Organize Your Workspace</h2>
+      <ul>
+        <li>Create a project folder (e.g., <code>MyQuartoProject</code>).</li>
+        <li>Open the folder in VS Code (<strong>File → Open Folder</strong>).</li>
+        <li>Keep your data, scripts, and Quarto files organized in one place.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Step 7: Preview and Render Quarto Files</h2>
+      <ol>
+        <li>Open a <code>.qmd</code> file.</li>
+        <li>Click <strong>Render</strong> at the top-right corner.</li>
+        <li>View your dashboard or report in HTML, PDF, or Word format.</li>
+      </ol>
+    </section>
+
+    <div class="highlight">
+      <strong>✅ You’re Ready to Build Dashboards!</strong>
+      <p>With VS Code, you can now:</p>
+      <ul>
+        <li>Write and run R, Python, and Quarto code</li>
+        <li>Integrate GitHub and Markdown support</li>
+        <li>Render and publish professional dashboards</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Strategic Insights & Analytics — Guide by Dr. Olugbenga Asaolu
+  </footer>
+</body>
+</html>
